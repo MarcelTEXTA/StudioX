@@ -9,7 +9,7 @@ Pour compiler TEXTA studioX, suivez les étapes ci-dessous :
 Dans `build`, avec Developer Command Prompt for Visual Studio, exécutez la commande suivante pour générer les fichiers de projet Visual Studio :
 
 ```bash
-cd C:\Users\<TonNom>\Documents\dev\MyImGuiApp
+cd C:\Users\<TonNom>\Documents\dev\StudioX
 rmdir /S /Q build
 mkdir build
 cd build
