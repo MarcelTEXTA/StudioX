@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/Family/Documents/dev/MyImGuiApp
+# Install script for directory: C:/Users/Family/Documents/dev/StudioX
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/MyImGuiApp")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/StudioX")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,13 +34,13 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/Family/Documents/dev/MyImGuiApp/build/glfw_build/cmake_install.cmake")
+  include("C:/Users/Family/Documents/dev/StudioX/build/glfw_build/cmake_install.cmake")
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "C:/Users/Family/Documents/dev/MyImGuiApp/build/install_local_manifest.txt"
+  file(WRITE "C:/Users/Family/Documents/dev/StudioX/build/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
 if(CMAKE_INSTALL_COMPONENT)
@@ -56,6 +56,6 @@ else()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "C:/Users/Family/Documents/dev/MyImGuiApp/build/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "C:/Users/Family/Documents/dev/StudioX/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

@@ -99,4 +99,4 @@ set(CMAKE_CXX_COMPILER_CLANG_RESOURCE_DIR "")
 
 set(CMAKE_CXX_COMPILER_IMPORT_STD "23")
 set(CMAKE_CXX_COMPILER_IMPORT_STD_ERROR_MESSAGE  "")
-set(CMAKE_CXX_STDLIB_MODULES_JSON "C:/Users/Family/Documents/dev/MyImGuiApp/build/CMakeFiles/4.3.0-rc1/msvcstl.modules.json")
+set(CMAKE_CXX_STDLIB_MODULES_JSON "C:/Users/Family/Documents/dev/StudioX/build/CMakeFiles/4.3.0-rc1/msvcstl.modules.json")

@@ -755,7 +755,7 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
       
       The CXX compiler identification is MSVC, found in:
-        C:/Users/Family/Documents/dev/MyImGuiApp/build/CMakeFiles/4.3.0-rc1/CompilerIdCXX/CMakeCXXCompilerId.exe
+        C:/Users/Family/Documents/dev/StudioX/build/CMakeFiles/4.3.0-rc1/CompilerIdCXX/CMakeCXXCompilerId.exe
       
   -
     kind: "message-v1"
@@ -767,7 +767,7 @@ events:
     message: |
       Detecting CXX compiler /showIncludes prefix:
         main.c
-        Remarque : inclusion du fichier :  C:\\Users\\Family\\Documents\\dev\\MyImGuiApp\\build\\CMakeFiles\\ShowIncludes\\foo.h
+        Remarque : inclusion du fichier :  C:\\Users\\Family\\Documents\\dev\\StudioX\\build\\CMakeFiles\\ShowIncludes\\foo.h
         
       Found prefix "Remarque : inclusion du fichier :  "
   -
@@ -1709,9 +1709,9 @@ events:
       - "C:/Program Files/CMake/bin/"
       - "C:/Program Files/CMake/sbin/"
       - "C:/Program Files/CMake/"
-      - "C:/Program Files (x86)/MyImGuiApp/bin/"
-      - "C:/Program Files (x86)/MyImGuiApp/sbin/"
-      - "C:/Program Files (x86)/MyImGuiApp/"
+      - "C:/Program Files (x86)/StudioX/bin/"
+      - "C:/Program Files (x86)/StudioX/sbin/"
+      - "C:/Program Files (x86)/StudioX/"
     searched_directories:
       - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.50.35717/bin/Hostx86/x86/rc.com"
       - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.50.35717/bin/Hostx86/x86/rc.exe"
@@ -1790,12 +1790,12 @@ events:
         - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
         - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
         - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\vcpkg"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/MyImGuiApp"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/StudioX"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files (x86)/MyImGuiApp"
+        - "C:/Program Files (x86)/StudioX"
   -
     kind: "try_compile-v1"
     backtrace:
@@ -1805,8 +1805,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/Family/Documents/dev/MyImGuiApp/build/CMakeFiles/CMakeScratch/TryCompile-avkj27"
-      binary: "C:/Users/Family/Documents/dev/MyImGuiApp/build/CMakeFiles/CMakeScratch/TryCompile-avkj27"
+      source: "C:/Users/Family/Documents/dev/StudioX/build/CMakeFiles/CMakeScratch/TryCompile-jnfbuh"
+      binary: "C:/Users/Family/Documents/dev/StudioX/build/CMakeFiles/CMakeScratch/TryCompile-jnfbuh"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -1817,11 +1817,11 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Family/Documents/dev/MyImGuiApp/build/CMakeFiles/CMakeScratch/TryCompile-avkj27'
+        Change Dir: 'C:/Users/Family/Documents/dev/StudioX/build/CMakeFiles/CMakeScratch/TryCompile-jnfbuh'
         
-        Run Build Command(s): C:/tools/ninja/ninja.exe -v cmTC_11977
-        [1/2] C:\\PROGRA~2\\MICROS~2\\18\\BUILDT~1\\VC\\Tools\\MSVC\\1450~1.357\\bin\\Hostx86\\x86\\cl.exe  /nologo /TP -D_MBCS  /DWIN32 /D_WINDOWS /GR /EHsc  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_11977.dir\\CMakeCXXCompilerABI.cpp.obj /FdCMakeFiles\\cmTC_11977.dir\\ /FS -c "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
-        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1950 --intdir=CMakeFiles\\cmTC_11977.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\mt.exe --manifests  -- C:\\PROGRA~2\\MICROS~2\\18\\BUILDT~1\\VC\\Tools\\MSVC\\1450~1.357\\bin\\Hostx86\\x86\\link.exe /nologo CMakeFiles\\cmTC_11977.dir\\CMakeCXXCompilerABI.cpp.obj  /out:cmTC_11977.exe /implib:cmTC_11977.lib /pdb:cmTC_11977.pdb /version:0.0 /machine:X86  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): C:/tools/ninja/ninja.exe -v cmTC_b7cde
+        [1/2] C:\\PROGRA~2\\MICROS~2\\18\\BUILDT~1\\VC\\Tools\\MSVC\\1450~1.357\\bin\\Hostx86\\x86\\cl.exe  /nologo /TP -D_MBCS  /DWIN32 /D_WINDOWS /GR /EHsc  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_b7cde.dir\\CMakeCXXCompilerABI.cpp.obj /FdCMakeFiles\\cmTC_b7cde.dir\\ /FS -c "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1950 --intdir=CMakeFiles\\cmTC_b7cde.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\mt.exe --manifests  -- C:\\PROGRA~2\\MICROS~2\\18\\BUILDT~1\\VC\\Tools\\MSVC\\1450~1.357\\bin\\Hostx86\\x86\\link.exe /nologo CMakeFiles\\cmTC_b7cde.dir\\CMakeCXXCompilerABI.cpp.obj  /out:cmTC_b7cde.exe /implib:cmTC_b7cde.lib /pdb:cmTC_b7cde.pdb /version:0.0 /machine:X86  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
@@ -2015,10 +2015,10 @@ events:
       - "C:/Program Files/CMake/include/"
       - "C:/Program Files/CMake/../modules/"
       - "C:/Program Files/CMake/"
-      - "C:/Program Files (x86)/MyImGuiApp/include/../modules/"
-      - "C:/Program Files (x86)/MyImGuiApp/include/"
-      - "C:/Program Files (x86)/MyImGuiApp/../modules/"
-      - "C:/Program Files (x86)/MyImGuiApp/"
+      - "C:/Program Files (x86)/StudioX/include/../modules/"
+      - "C:/Program Files (x86)/StudioX/include/"
+      - "C:/Program Files (x86)/StudioX/../modules/"
+      - "C:/Program Files (x86)/StudioX/"
       - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.50.35717/include;C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Auxiliary/VS/include;C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt;C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/um;C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/shared;C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/winrt;C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/cppwinrt;C:/Program Files (x86)/Windows Kits/NETFXSDK/4.8/include/um/../modules/"
       - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.50.35717/include;C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Auxiliary/VS/include;C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt;C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/um;C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/shared;C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/winrt;C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/cppwinrt;C:/Program Files (x86)/Windows Kits/NETFXSDK/4.8/include/um/"
       - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.50.35717/bin/../modules/"
@@ -2164,10 +2164,10 @@ events:
       - "C:/Program Files/CMake/include/NAME"
       - "C:/Program Files/CMake/../modules/NAME"
       - "C:/Program Files/CMake/NAME"
-      - "C:/Program Files (x86)/MyImGuiApp/include/../modules/NAME"
-      - "C:/Program Files (x86)/MyImGuiApp/include/NAME"
-      - "C:/Program Files (x86)/MyImGuiApp/../modules/NAME"
-      - "C:/Program Files (x86)/MyImGuiApp/NAME"
+      - "C:/Program Files (x86)/StudioX/include/../modules/NAME"
+      - "C:/Program Files (x86)/StudioX/include/NAME"
+      - "C:/Program Files (x86)/StudioX/../modules/NAME"
+      - "C:/Program Files (x86)/StudioX/NAME"
       - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.50.35717/include;C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Auxiliary/VS/include;C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt;C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/um;C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/shared;C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/winrt;C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/cppwinrt;C:/Program Files (x86)/Windows Kits/NETFXSDK/4.8/include/um/../modules/NAME"
       - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.50.35717/include;C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Auxiliary/VS/include;C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt;C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/um;C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/shared;C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/winrt;C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/cppwinrt;C:/Program Files (x86)/Windows Kits/NETFXSDK/4.8/include/um/NAME"
       - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.50.35717/bin/../modules/NAME"
@@ -2232,12 +2232,12 @@ events:
         - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
         - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
         - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\vcpkg"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/MyImGuiApp"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/StudioX"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files (x86)/MyImGuiApp"
+        - "C:/Program Files (x86)/StudioX"
       ENV{INCLUDE}:
         - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.50.35717\\include"
         - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Auxiliary\\VS\\include"
@@ -2347,12 +2347,12 @@ events:
         - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
         - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
         - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\vcpkg"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/MyImGuiApp"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/StudioX"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files (x86)/MyImGuiApp"
+        - "C:/Program Files (x86)/StudioX"
   -
     kind: "find-v1"
     backtrace:
@@ -2435,12 +2435,12 @@ events:
         - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
         - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
         - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\vcpkg"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/MyImGuiApp"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/StudioX"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files (x86)/MyImGuiApp"
+        - "C:/Program Files (x86)/StudioX"
       ENV{INCLUDE}:
         - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.50.35717\\include"
         - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Auxiliary\\VS\\include"
@@ -2481,7 +2481,7 @@ events:
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.obj"
       
       The C compiler identification is MSVC, found in:
-        C:/Users/Family/Documents/dev/MyImGuiApp/build/CMakeFiles/4.3.0-rc1/CompilerIdC/CMakeCCompilerId.exe
+        C:/Users/Family/Documents/dev/StudioX/build/CMakeFiles/4.3.0-rc1/CompilerIdC/CMakeCCompilerId.exe
       
   -
     kind: "message-v1"
@@ -2493,7 +2493,7 @@ events:
     message: |
       Detecting C compiler /showIncludes prefix:
         main.c
-        Remarque : inclusion du fichier :  C:\\Users\\Family\\Documents\\dev\\MyImGuiApp\\build\\CMakeFiles\\ShowIncludes\\foo.h
+        Remarque : inclusion du fichier :  C:\\Users\\Family\\Documents\\dev\\StudioX\\build\\CMakeFiles\\ShowIncludes\\foo.h
         
       Found prefix "Remarque : inclusion du fichier :  "
   -
@@ -2581,9 +2581,9 @@ events:
       - "C:/Program Files/CMake/bin/"
       - "C:/Program Files/CMake/sbin/"
       - "C:/Program Files/CMake/"
-      - "C:/Program Files (x86)/MyImGuiApp/bin/"
-      - "C:/Program Files (x86)/MyImGuiApp/sbin/"
-      - "C:/Program Files (x86)/MyImGuiApp/"
+      - "C:/Program Files (x86)/StudioX/bin/"
+      - "C:/Program Files (x86)/StudioX/sbin/"
+      - "C:/Program Files (x86)/StudioX/"
     searched_directories:
       - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.50.35717/bin/Hostx86/x86/lld-link.com"
       - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.50.35717/bin/Hostx86/x86/lld-link.exe"
@@ -2774,15 +2774,15 @@ events:
       - "C:/Program Files/CMake/lld-link.com"
       - "C:/Program Files/CMake/lld-link.exe"
       - "C:/Program Files/CMake/lld-link"
-      - "C:/Program Files (x86)/MyImGuiApp/bin/lld-link.com"
-      - "C:/Program Files (x86)/MyImGuiApp/bin/lld-link.exe"
-      - "C:/Program Files (x86)/MyImGuiApp/bin/lld-link"
-      - "C:/Program Files (x86)/MyImGuiApp/sbin/lld-link.com"
-      - "C:/Program Files (x86)/MyImGuiApp/sbin/lld-link.exe"
-      - "C:/Program Files (x86)/MyImGuiApp/sbin/lld-link"
-      - "C:/Program Files (x86)/MyImGuiApp/lld-link.com"
-      - "C:/Program Files (x86)/MyImGuiApp/lld-link.exe"
-      - "C:/Program Files (x86)/MyImGuiApp/lld-link"
+      - "C:/Program Files (x86)/StudioX/bin/lld-link.com"
+      - "C:/Program Files (x86)/StudioX/bin/lld-link.exe"
+      - "C:/Program Files (x86)/StudioX/bin/lld-link"
+      - "C:/Program Files (x86)/StudioX/sbin/lld-link.com"
+      - "C:/Program Files (x86)/StudioX/sbin/lld-link.exe"
+      - "C:/Program Files (x86)/StudioX/sbin/lld-link"
+      - "C:/Program Files (x86)/StudioX/lld-link.com"
+      - "C:/Program Files (x86)/StudioX/lld-link.exe"
+      - "C:/Program Files (x86)/StudioX/lld-link"
     found: false
     search_context:
       ENV{PATH}:
@@ -2841,12 +2841,12 @@ events:
         - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
         - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
         - "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\vcpkg"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/MyImGuiApp"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/StudioX"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files (x86)/MyImGuiApp"
+        - "C:/Program Files (x86)/StudioX"
   -
     kind: "try_compile-v1"
     backtrace:
@@ -2856,10 +2856,10 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/Family/Documents/dev/MyImGuiApp/build/CMakeFiles/CMakeScratch/TryCompile-7y8ol7"
-      binary: "C:/Users/Family/Documents/dev/MyImGuiApp/build/CMakeFiles/CMakeScratch/TryCompile-7y8ol7"
+      source: "C:/Users/Family/Documents/dev/StudioX/build/CMakeFiles/CMakeScratch/TryCompile-gi5zyn"
+      binary: "C:/Users/Family/Documents/dev/StudioX/build/CMakeFiles/CMakeScratch/TryCompile-gi5zyn"
     cmakeVariables:
-      CMAKE_CXX_STDLIB_MODULES_JSON: "C:/Users/Family/Documents/dev/MyImGuiApp/build/CMakeFiles/4.3.0-rc1/msvcstl.modules.json"
+      CMAKE_CXX_STDLIB_MODULES_JSON: "C:/Users/Family/Documents/dev/StudioX/build/CMakeFiles/4.3.0-rc1/msvcstl.modules.json"
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
       CMAKE_EXE_LINKER_FLAGS: "/machine:X86"
@@ -2867,11 +2867,11 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Family/Documents/dev/MyImGuiApp/build/CMakeFiles/CMakeScratch/TryCompile-7y8ol7'
+        Change Dir: 'C:/Users/Family/Documents/dev/StudioX/build/CMakeFiles/CMakeScratch/TryCompile-gi5zyn'
         
-        Run Build Command(s): C:/tools/ninja/ninja.exe -v cmTC_70415
-        [1/2] C:\\PROGRA~2\\MICROS~2\\18\\BUILDT~1\\VC\\Tools\\MSVC\\1450~1.357\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_MBCS  /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_70415.dir\\CMakeCCompilerABI.c.obj /FdCMakeFiles\\cmTC_70415.dir\\ /FS -c "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCCompilerABI.c"
-        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1950 --intdir=CMakeFiles\\cmTC_70415.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\mt.exe --manifests  -- C:\\PROGRA~2\\MICROS~2\\18\\BUILDT~1\\VC\\Tools\\MSVC\\1450~1.357\\bin\\Hostx86\\x86\\link.exe /nologo CMakeFiles\\cmTC_70415.dir\\CMakeCCompilerABI.c.obj  /out:cmTC_70415.exe /implib:cmTC_70415.lib /pdb:cmTC_70415.pdb /version:0.0 /machine:X86  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): C:/tools/ninja/ninja.exe -v cmTC_06df3
+        [1/2] C:\\PROGRA~2\\MICROS~2\\18\\BUILDT~1\\VC\\Tools\\MSVC\\1450~1.357\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_MBCS  /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_06df3.dir\\CMakeCCompilerABI.c.obj /FdCMakeFiles\\cmTC_06df3.dir\\ /FS -c "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCCompilerABI.c"
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1950 --intdir=CMakeFiles\\cmTC_06df3.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\mt.exe --manifests  -- C:\\PROGRA~2\\MICROS~2\\18\\BUILDT~1\\VC\\Tools\\MSVC\\1450~1.357\\bin\\Hostx86\\x86\\link.exe /nologo CMakeFiles\\cmTC_06df3.dir\\CMakeCCompilerABI.c.obj  /out:cmTC_06df3.exe /implib:cmTC_06df3.lib /pdb:cmTC_06df3.pdb /version:0.0 /machine:X86  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
@@ -2913,10 +2913,10 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "C:/Users/Family/Documents/dev/MyImGuiApp/build/CMakeFiles/CMakeScratch/TryCompile-mpdtq4"
-      binary: "C:/Users/Family/Documents/dev/MyImGuiApp/build/CMakeFiles/CMakeScratch/TryCompile-mpdtq4"
+      source: "C:/Users/Family/Documents/dev/StudioX/build/CMakeFiles/CMakeScratch/TryCompile-6unmkz"
+      binary: "C:/Users/Family/Documents/dev/StudioX/build/CMakeFiles/CMakeScratch/TryCompile-6unmkz"
     cmakeVariables:
-      CMAKE_CXX_STDLIB_MODULES_JSON: "C:/Users/Family/Documents/dev/MyImGuiApp/build/CMakeFiles/4.3.0-rc1/msvcstl.modules.json"
+      CMAKE_CXX_STDLIB_MODULES_JSON: "C:/Users/Family/Documents/dev/StudioX/build/CMakeFiles/4.3.0-rc1/msvcstl.modules.json"
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
       CMAKE_EXE_LINKER_FLAGS: "/machine:X86"
@@ -2925,13 +2925,13 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Family/Documents/dev/MyImGuiApp/build/CMakeFiles/CMakeScratch/TryCompile-mpdtq4'
+        Change Dir: 'C:/Users/Family/Documents/dev/StudioX/build/CMakeFiles/CMakeScratch/TryCompile-6unmkz'
         
-        Run Build Command(s): C:/tools/ninja/ninja.exe -v cmTC_421ba
-        [1/2] C:\\PROGRA~2\\MICROS~2\\18\\BUILDT~1\\VC\\Tools\\MSVC\\1450~1.357\\bin\\Hostx86\\x86\\cl.exe  /nologo -DCMAKE_HAVE_LIBC_PTHREAD -D_MBCS  /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_421ba.dir\\src.c.obj /FdCMakeFiles\\cmTC_421ba.dir\\ /FS -c C:\\Users\\Family\\Documents\\dev\\MyImGuiApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mpdtq4\\src.c
-        FAILED: [code=2] CMakeFiles/cmTC_421ba.dir/src.c.obj 
-        C:\\PROGRA~2\\MICROS~2\\18\\BUILDT~1\\VC\\Tools\\MSVC\\1450~1.357\\bin\\Hostx86\\x86\\cl.exe  /nologo -DCMAKE_HAVE_LIBC_PTHREAD -D_MBCS  /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_421ba.dir\\src.c.obj /FdCMakeFiles\\cmTC_421ba.dir\\ /FS -c C:\\Users\\Family\\Documents\\dev\\MyImGuiApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mpdtq4\\src.c
-        C:\\Users\\Family\\Documents\\dev\\MyImGuiApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mpdtq4\\src.c(1): fatal error C1083: Impossible d'ouvrir le fichier include : 'pthread.h' : No such file or directory
+        Run Build Command(s): C:/tools/ninja/ninja.exe -v cmTC_349d3
+        [1/2] C:\\PROGRA~2\\MICROS~2\\18\\BUILDT~1\\VC\\Tools\\MSVC\\1450~1.357\\bin\\Hostx86\\x86\\cl.exe  /nologo -DCMAKE_HAVE_LIBC_PTHREAD -D_MBCS  /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_349d3.dir\\src.c.obj /FdCMakeFiles\\cmTC_349d3.dir\\ /FS -c C:\\Users\\Family\\Documents\\dev\\StudioX\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6unmkz\\src.c
+        FAILED: [code=2] CMakeFiles/cmTC_349d3.dir/src.c.obj 
+        C:\\PROGRA~2\\MICROS~2\\18\\BUILDT~1\\VC\\Tools\\MSVC\\1450~1.357\\bin\\Hostx86\\x86\\cl.exe  /nologo -DCMAKE_HAVE_LIBC_PTHREAD -D_MBCS  /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_349d3.dir\\src.c.obj /FdCMakeFiles\\cmTC_349d3.dir\\ /FS -c C:\\Users\\Family\\Documents\\dev\\StudioX\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6unmkz\\src.c
+        C:\\Users\\Family\\Documents\\dev\\StudioX\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6unmkz\\src.c(1): fatal error C1083: Impossible d'ouvrir le fichier include : 'pthread.h' : No such file or directory
         ninja: build stopped: subcommand failed.
         
       exitCode: 2
@@ -2945,10 +2945,10 @@ events:
     checks:
       - "Looking for pthread_create in pthreads"
     directories:
-      source: "C:/Users/Family/Documents/dev/MyImGuiApp/build/CMakeFiles/CMakeScratch/TryCompile-fq5ddy"
-      binary: "C:/Users/Family/Documents/dev/MyImGuiApp/build/CMakeFiles/CMakeScratch/TryCompile-fq5ddy"
+      source: "C:/Users/Family/Documents/dev/StudioX/build/CMakeFiles/CMakeScratch/TryCompile-mqtydt"
+      binary: "C:/Users/Family/Documents/dev/StudioX/build/CMakeFiles/CMakeScratch/TryCompile-mqtydt"
     cmakeVariables:
-      CMAKE_CXX_STDLIB_MODULES_JSON: "C:/Users/Family/Documents/dev/MyImGuiApp/build/CMakeFiles/4.3.0-rc1/msvcstl.modules.json"
+      CMAKE_CXX_STDLIB_MODULES_JSON: "C:/Users/Family/Documents/dev/StudioX/build/CMakeFiles/4.3.0-rc1/msvcstl.modules.json"
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
       CMAKE_EXE_LINKER_FLAGS: "/machine:X86"
@@ -2957,14 +2957,14 @@ events:
       variable: "CMAKE_HAVE_PTHREADS_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Family/Documents/dev/MyImGuiApp/build/CMakeFiles/CMakeScratch/TryCompile-fq5ddy'
+        Change Dir: 'C:/Users/Family/Documents/dev/StudioX/build/CMakeFiles/CMakeScratch/TryCompile-mqtydt'
         
-        Run Build Command(s): C:/tools/ninja/ninja.exe -v cmTC_ebeef
-        [1/2] C:\\PROGRA~2\\MICROS~2\\18\\BUILDT~1\\VC\\Tools\\MSVC\\1450~1.357\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_MBCS  /DWIN32 /D_WINDOWS -DCHECK_FUNCTION_EXISTS=pthread_create /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_ebeef.dir\\CheckFunctionExists.c.obj /FdCMakeFiles\\cmTC_ebeef.dir\\ /FS -c C:\\Users\\Family\\Documents\\dev\\MyImGuiApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fq5ddy\\CheckFunctionExists.c
-        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1950 --intdir=CMakeFiles\\cmTC_ebeef.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\mt.exe --manifests  -- C:\\PROGRA~2\\MICROS~2\\18\\BUILDT~1\\VC\\Tools\\MSVC\\1450~1.357\\bin\\Hostx86\\x86\\link.exe /nologo CMakeFiles\\cmTC_ebeef.dir\\CheckFunctionExists.c.obj  /out:cmTC_ebeef.exe /implib:cmTC_ebeef.lib /pdb:cmTC_ebeef.pdb /version:0.0 /machine:X86  /debug /INCREMENTAL /subsystem:console  pthreads.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
-        FAILED: [code=4294967295] cmTC_ebeef.exe 
-        C:\\Windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1950 --intdir=CMakeFiles\\cmTC_ebeef.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\mt.exe --manifests  -- C:\\PROGRA~2\\MICROS~2\\18\\BUILDT~1\\VC\\Tools\\MSVC\\1450~1.357\\bin\\Hostx86\\x86\\link.exe /nologo CMakeFiles\\cmTC_ebeef.dir\\CheckFunctionExists.c.obj  /out:cmTC_ebeef.exe /implib:cmTC_ebeef.lib /pdb:cmTC_ebeef.pdb /version:0.0 /machine:X86  /debug /INCREMENTAL /subsystem:console  pthreads.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
-        LINK Pass 1: command "C:\\PROGRA~2\\MICROS~2\\18\\BUILDT~1\\VC\\Tools\\MSVC\\1450~1.357\\bin\\Hostx86\\x86\\link.exe /nologo CMakeFiles\\cmTC_ebeef.dir\\CheckFunctionExists.c.obj /out:cmTC_ebeef.exe /implib:cmTC_ebeef.lib /pdb:cmTC_ebeef.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_ebeef.dir/intermediate.manifest CMakeFiles\\cmTC_ebeef.dir/manifest.res" failed (exit code 1104) with the following output:
+        Run Build Command(s): C:/tools/ninja/ninja.exe -v cmTC_5aef3
+        [1/2] C:\\PROGRA~2\\MICROS~2\\18\\BUILDT~1\\VC\\Tools\\MSVC\\1450~1.357\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_MBCS  /DWIN32 /D_WINDOWS -DCHECK_FUNCTION_EXISTS=pthread_create /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_5aef3.dir\\CheckFunctionExists.c.obj /FdCMakeFiles\\cmTC_5aef3.dir\\ /FS -c C:\\Users\\Family\\Documents\\dev\\StudioX\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mqtydt\\CheckFunctionExists.c
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1950 --intdir=CMakeFiles\\cmTC_5aef3.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\mt.exe --manifests  -- C:\\PROGRA~2\\MICROS~2\\18\\BUILDT~1\\VC\\Tools\\MSVC\\1450~1.357\\bin\\Hostx86\\x86\\link.exe /nologo CMakeFiles\\cmTC_5aef3.dir\\CheckFunctionExists.c.obj  /out:cmTC_5aef3.exe /implib:cmTC_5aef3.lib /pdb:cmTC_5aef3.pdb /version:0.0 /machine:X86  /debug /INCREMENTAL /subsystem:console  pthreads.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        FAILED: [code=4294967295] cmTC_5aef3.exe 
+        C:\\Windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1950 --intdir=CMakeFiles\\cmTC_5aef3.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\mt.exe --manifests  -- C:\\PROGRA~2\\MICROS~2\\18\\BUILDT~1\\VC\\Tools\\MSVC\\1450~1.357\\bin\\Hostx86\\x86\\link.exe /nologo CMakeFiles\\cmTC_5aef3.dir\\CheckFunctionExists.c.obj  /out:cmTC_5aef3.exe /implib:cmTC_5aef3.lib /pdb:cmTC_5aef3.pdb /version:0.0 /machine:X86  /debug /INCREMENTAL /subsystem:console  pthreads.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        LINK Pass 1: command "C:\\PROGRA~2\\MICROS~2\\18\\BUILDT~1\\VC\\Tools\\MSVC\\1450~1.357\\bin\\Hostx86\\x86\\link.exe /nologo CMakeFiles\\cmTC_5aef3.dir\\CheckFunctionExists.c.obj /out:cmTC_5aef3.exe /implib:cmTC_5aef3.lib /pdb:cmTC_5aef3.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_5aef3.dir/intermediate.manifest CMakeFiles\\cmTC_5aef3.dir/manifest.res" failed (exit code 1104) with the following output:
         LINK : fatal error LNK1104: impossible d'ouvrir le fichier 'pthreads.lib'\x0d
         ninja: build stopped: subcommand failed.
         
@@ -2979,10 +2979,10 @@ events:
     checks:
       - "Looking for pthread_create in pthread"
     directories:
-      source: "C:/Users/Family/Documents/dev/MyImGuiApp/build/CMakeFiles/CMakeScratch/TryCompile-t0nleb"
-      binary: "C:/Users/Family/Documents/dev/MyImGuiApp/build/CMakeFiles/CMakeScratch/TryCompile-t0nleb"
+      source: "C:/Users/Family/Documents/dev/StudioX/build/CMakeFiles/CMakeScratch/TryCompile-uwgfit"
+      binary: "C:/Users/Family/Documents/dev/StudioX/build/CMakeFiles/CMakeScratch/TryCompile-uwgfit"
     cmakeVariables:
-      CMAKE_CXX_STDLIB_MODULES_JSON: "C:/Users/Family/Documents/dev/MyImGuiApp/build/CMakeFiles/4.3.0-rc1/msvcstl.modules.json"
+      CMAKE_CXX_STDLIB_MODULES_JSON: "C:/Users/Family/Documents/dev/StudioX/build/CMakeFiles/4.3.0-rc1/msvcstl.modules.json"
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
       CMAKE_EXE_LINKER_FLAGS: "/machine:X86"
@@ -2991,14 +2991,14 @@ events:
       variable: "CMAKE_HAVE_PTHREAD_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Family/Documents/dev/MyImGuiApp/build/CMakeFiles/CMakeScratch/TryCompile-t0nleb'
+        Change Dir: 'C:/Users/Family/Documents/dev/StudioX/build/CMakeFiles/CMakeScratch/TryCompile-uwgfit'
         
-        Run Build Command(s): C:/tools/ninja/ninja.exe -v cmTC_c3618
-        [1/2] C:\\PROGRA~2\\MICROS~2\\18\\BUILDT~1\\VC\\Tools\\MSVC\\1450~1.357\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_MBCS  /DWIN32 /D_WINDOWS -DCHECK_FUNCTION_EXISTS=pthread_create /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_c3618.dir\\CheckFunctionExists.c.obj /FdCMakeFiles\\cmTC_c3618.dir\\ /FS -c C:\\Users\\Family\\Documents\\dev\\MyImGuiApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-t0nleb\\CheckFunctionExists.c
-        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1950 --intdir=CMakeFiles\\cmTC_c3618.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\mt.exe --manifests  -- C:\\PROGRA~2\\MICROS~2\\18\\BUILDT~1\\VC\\Tools\\MSVC\\1450~1.357\\bin\\Hostx86\\x86\\link.exe /nologo CMakeFiles\\cmTC_c3618.dir\\CheckFunctionExists.c.obj  /out:cmTC_c3618.exe /implib:cmTC_c3618.lib /pdb:cmTC_c3618.pdb /version:0.0 /machine:X86  /debug /INCREMENTAL /subsystem:console  pthread.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
-        FAILED: [code=4294967295] cmTC_c3618.exe 
-        C:\\Windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1950 --intdir=CMakeFiles\\cmTC_c3618.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\mt.exe --manifests  -- C:\\PROGRA~2\\MICROS~2\\18\\BUILDT~1\\VC\\Tools\\MSVC\\1450~1.357\\bin\\Hostx86\\x86\\link.exe /nologo CMakeFiles\\cmTC_c3618.dir\\CheckFunctionExists.c.obj  /out:cmTC_c3618.exe /implib:cmTC_c3618.lib /pdb:cmTC_c3618.pdb /version:0.0 /machine:X86  /debug /INCREMENTAL /subsystem:console  pthread.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
-        LINK Pass 1: command "C:\\PROGRA~2\\MICROS~2\\18\\BUILDT~1\\VC\\Tools\\MSVC\\1450~1.357\\bin\\Hostx86\\x86\\link.exe /nologo CMakeFiles\\cmTC_c3618.dir\\CheckFunctionExists.c.obj /out:cmTC_c3618.exe /implib:cmTC_c3618.lib /pdb:cmTC_c3618.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_c3618.dir/intermediate.manifest CMakeFiles\\cmTC_c3618.dir/manifest.res" failed (exit code 1104) with the following output:
+        Run Build Command(s): C:/tools/ninja/ninja.exe -v cmTC_dcfc6
+        [1/2] C:\\PROGRA~2\\MICROS~2\\18\\BUILDT~1\\VC\\Tools\\MSVC\\1450~1.357\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_MBCS  /DWIN32 /D_WINDOWS -DCHECK_FUNCTION_EXISTS=pthread_create /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_dcfc6.dir\\CheckFunctionExists.c.obj /FdCMakeFiles\\cmTC_dcfc6.dir\\ /FS -c C:\\Users\\Family\\Documents\\dev\\StudioX\\build\\CMakeFiles\\CMakeScratch\\TryCompile-uwgfit\\CheckFunctionExists.c
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1950 --intdir=CMakeFiles\\cmTC_dcfc6.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\mt.exe --manifests  -- C:\\PROGRA~2\\MICROS~2\\18\\BUILDT~1\\VC\\Tools\\MSVC\\1450~1.357\\bin\\Hostx86\\x86\\link.exe /nologo CMakeFiles\\cmTC_dcfc6.dir\\CheckFunctionExists.c.obj  /out:cmTC_dcfc6.exe /implib:cmTC_dcfc6.lib /pdb:cmTC_dcfc6.pdb /version:0.0 /machine:X86  /debug /INCREMENTAL /subsystem:console  pthread.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        FAILED: [code=4294967295] cmTC_dcfc6.exe 
+        C:\\Windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1950 --intdir=CMakeFiles\\cmTC_dcfc6.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\mt.exe --manifests  -- C:\\PROGRA~2\\MICROS~2\\18\\BUILDT~1\\VC\\Tools\\MSVC\\1450~1.357\\bin\\Hostx86\\x86\\link.exe /nologo CMakeFiles\\cmTC_dcfc6.dir\\CheckFunctionExists.c.obj  /out:cmTC_dcfc6.exe /implib:cmTC_dcfc6.lib /pdb:cmTC_dcfc6.pdb /version:0.0 /machine:X86  /debug /INCREMENTAL /subsystem:console  pthread.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        LINK Pass 1: command "C:\\PROGRA~2\\MICROS~2\\18\\BUILDT~1\\VC\\Tools\\MSVC\\1450~1.357\\bin\\Hostx86\\x86\\link.exe /nologo CMakeFiles\\cmTC_dcfc6.dir\\CheckFunctionExists.c.obj /out:cmTC_dcfc6.exe /implib:cmTC_dcfc6.lib /pdb:cmTC_dcfc6.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_dcfc6.dir/intermediate.manifest CMakeFiles\\cmTC_dcfc6.dir/manifest.res" failed (exit code 1104) with the following output:
         LINK : fatal error LNK1104: impossible d'ouvrir le fichier 'pthread.lib'\x0d
         ninja: build stopped: subcommand failed.
         

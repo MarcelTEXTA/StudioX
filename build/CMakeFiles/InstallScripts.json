@@ -1,9 +1,9 @@
 {
 	"InstallScripts" : 
 	[
-		"C:/Users/Family/Documents/dev/MyImGuiApp/build/cmake_install.cmake",
-		"C:/Users/Family/Documents/dev/MyImGuiApp/build/glfw_build/cmake_install.cmake",
-		"C:/Users/Family/Documents/dev/MyImGuiApp/build/glfw_build/src/cmake_install.cmake"
+		"C:/Users/Family/Documents/dev/StudioX/build/cmake_install.cmake",
+		"C:/Users/Family/Documents/dev/StudioX/build/glfw_build/cmake_install.cmake",
+		"C:/Users/Family/Documents/dev/StudioX/build/glfw_build/src/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

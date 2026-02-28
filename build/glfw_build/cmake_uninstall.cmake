@@ -1,9 +1,9 @@
 
-if (NOT EXISTS "C:/Users/Family/Documents/dev/MyImGuiApp/build/glfw_build/install_manifest.txt")
-    message(FATAL_ERROR "Cannot find install manifest: \"C:/Users/Family/Documents/dev/MyImGuiApp/build/glfw_build/install_manifest.txt\"")
+if (NOT EXISTS "C:/Users/Family/Documents/dev/StudioX/build/glfw_build/install_manifest.txt")
+    message(FATAL_ERROR "Cannot find install manifest: \"C:/Users/Family/Documents/dev/StudioX/build/glfw_build/install_manifest.txt\"")
 endif()
 
-file(READ "C:/Users/Family/Documents/dev/MyImGuiApp/build/glfw_build/install_manifest.txt" files)
+file(READ "C:/Users/Family/Documents/dev/StudioX/build/glfw_build/install_manifest.txt" files)
 string(REGEX REPLACE "\n" ";" files "${files}")
 
 foreach (file ${files})

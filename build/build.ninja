@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: MyImGuiApp
+# Project: StudioX
 # Configurations: Release
 # =============================================================================
 
@@ -39,7 +39,7 @@ include CMakeFiles\rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = C$:\Users\Family\Documents\dev\MyImGuiApp\build\
+cmake_ninja_workdir = C$:\Users\Family\Documents\dev\StudioX\build\
 # =============================================================================
 # Object build statements for STATIC_LIBRARY target imgui
 
@@ -140,52 +140,62 @@ build imgui.lib: CXX_STATIC_LIBRARY_LINKER__imgui_Release CMakeFiles\imgui.dir\C
   TARGET_SUPPORT_DIR = CMakeFiles\imgui.dir
 
 # =============================================================================
-# Object build statements for EXECUTABLE target MyImGuiApp
+# Object build statements for EXECUTABLE target StudioX
 
 
 #############################################
-# Order-only phony target for MyImGuiApp
+# Order-only phony target for StudioX
 
-build cmake_object_order_depends_target_MyImGuiApp: phony || cmake_object_order_depends_target_glfw cmake_object_order_depends_target_imgui
+build cmake_object_order_depends_target_StudioX: phony || cmake_object_order_depends_target_glfw cmake_object_order_depends_target_imgui
 
-build CMakeFiles\MyImGuiApp.dir\src\main.cpp.obj: CXX_COMPILER__MyImGuiApp_unscanned_Release C$:\Users\Family\Documents\dev\MyImGuiApp\src\main.cpp || cmake_object_order_depends_target_MyImGuiApp
+build CMakeFiles\StudioX.dir\src\core\Application.cpp.obj: CXX_COMPILER__StudioX_unscanned_Release C$:\Users\Family\Documents\dev\StudioX\src\core\Application.cpp || cmake_object_order_depends_target_StudioX
   CONFIG = Release
   FLAGS = /DWIN32 /D_WINDOWS /GR /EHsc /O2 /Ob2 /DNDEBUG -std:c++17 -MD
-  INCLUDES = -IC:\Users\Family\Documents\dev\imgui -IC:\Users\Family\Documents\dev\imgui\backends -IC:\Users\Family\Documents\dev\glfw\include -IC:\Users\Family\Documents\dev\MyImGuiApp\src
-  OBJECT_DIR = CMakeFiles\MyImGuiApp.dir
-  OBJECT_FILE_DIR = CMakeFiles\MyImGuiApp.dir\src
-  TARGET_COMPILE_PDB = CMakeFiles\MyImGuiApp.dir\
-  TARGET_PDB = MyImGuiApp.pdb
-  TARGET_SUPPORT_DIR = CMakeFiles\MyImGuiApp.dir
+  INCLUDES = -IC:\Users\Family\Documents\dev\imgui -IC:\Users\Family\Documents\dev\imgui\backends -IC:\Users\Family\Documents\dev\glfw\include -IC:\Users\Family\Documents\dev\StudioX\src
+  OBJECT_DIR = CMakeFiles\StudioX.dir
+  OBJECT_FILE_DIR = CMakeFiles\StudioX.dir\src\core
+  TARGET_COMPILE_PDB = CMakeFiles\StudioX.dir\
+  TARGET_PDB = StudioX.pdb
+  TARGET_SUPPORT_DIR = CMakeFiles\StudioX.dir
+
+build CMakeFiles\StudioX.dir\src\main.cpp.obj: CXX_COMPILER__StudioX_unscanned_Release C$:\Users\Family\Documents\dev\StudioX\src\main.cpp || cmake_object_order_depends_target_StudioX
+  CONFIG = Release
+  FLAGS = /DWIN32 /D_WINDOWS /GR /EHsc /O2 /Ob2 /DNDEBUG -std:c++17 -MD
+  INCLUDES = -IC:\Users\Family\Documents\dev\imgui -IC:\Users\Family\Documents\dev\imgui\backends -IC:\Users\Family\Documents\dev\glfw\include -IC:\Users\Family\Documents\dev\StudioX\src
+  OBJECT_DIR = CMakeFiles\StudioX.dir
+  OBJECT_FILE_DIR = CMakeFiles\StudioX.dir\src
+  TARGET_COMPILE_PDB = CMakeFiles\StudioX.dir\
+  TARGET_PDB = StudioX.pdb
+  TARGET_SUPPORT_DIR = CMakeFiles\StudioX.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target MyImGuiApp
+# Link build statements for EXECUTABLE target StudioX
 
 
 #############################################
-# Link the executable MyImGuiApp.exe
+# Link the executable StudioX.exe
 
-build MyImGuiApp.exe: CXX_EXECUTABLE_LINKER__MyImGuiApp_Release CMakeFiles\MyImGuiApp.dir\src\main.cpp.obj | imgui.lib glfw_build\src\glfw3.lib || glfw_build\src\glfw3.lib imgui.lib
+build StudioX.exe: CXX_EXECUTABLE_LINKER__StudioX_Release CMakeFiles\StudioX.dir\src\core\Application.cpp.obj CMakeFiles\StudioX.dir\src\main.cpp.obj | imgui.lib glfw_build\src\glfw3.lib || glfw_build\src\glfw3.lib imgui.lib
   CONFIG = Release
   FLAGS = /DWIN32 /D_WINDOWS /GR /EHsc /O2 /Ob2 /DNDEBUG -MD
   LINK_FLAGS = /machine:X86 /INCREMENTAL:NO /subsystem:console
   LINK_LIBRARIES = imgui.lib  glfw_build\src\glfw3.lib  opengl32.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
-  OBJECT_DIR = CMakeFiles\MyImGuiApp.dir
+  OBJECT_DIR = CMakeFiles\StudioX.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\MyImGuiApp.dir\
-  TARGET_FILE = MyImGuiApp.exe
-  TARGET_IMPLIB = MyImGuiApp.lib
-  TARGET_PDB = MyImGuiApp.pdb
-  TARGET_SUPPORT_DIR = CMakeFiles\MyImGuiApp.dir
+  TARGET_COMPILE_PDB = CMakeFiles\StudioX.dir\
+  TARGET_FILE = StudioX.exe
+  TARGET_IMPLIB = StudioX.lib
+  TARGET_PDB = StudioX.pdb
+  TARGET_SUPPORT_DIR = CMakeFiles\StudioX.dir
 
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\Family\Documents\dev\MyImGuiApp\build && "C:\Program Files\CMake\bin\cmake-gui.exe" -SC:\Users\Family\Documents\dev\MyImGuiApp -BC:\Users\Family\Documents\dev\MyImGuiApp\build"
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\Family\Documents\dev\StudioX\build && "C:\Program Files\CMake\bin\cmake-gui.exe" -SC:\Users\Family\Documents\dev\StudioX -BC:\Users\Family\Documents\dev\StudioX\build"
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -197,7 +207,7 @@ build edit_cache: phony CMakeFiles\edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\Family\Documents\dev\MyImGuiApp\build && "C:\Program Files\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\Family\Documents\dev\MyImGuiApp -BC:\Users\Family\Documents\dev\MyImGuiApp\build"
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\Family\Documents\dev\StudioX\build && "C:\Program Files\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\Family\Documents\dev\StudioX -BC:\Users\Family\Documents\dev\StudioX\build"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -215,7 +225,7 @@ build list_install_components: phony
 # Utility command for install
 
 build CMakeFiles\install.util: CUSTOM_COMMAND all
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\Family\Documents\dev\MyImGuiApp\build && "C:\Program Files\CMake\bin\cmake.exe" -P cmake_install.cmake"
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\Family\Documents\dev\StudioX\build && "C:\Program Files\CMake\bin\cmake.exe" -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
@@ -227,7 +237,7 @@ build install: phony CMakeFiles\install.util
 # Utility command for install/local
 
 build CMakeFiles\install\local.util: CUSTOM_COMMAND all
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\Family\Documents\dev\MyImGuiApp\build && "C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\Family\Documents\dev\StudioX\build && "C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -236,7 +246,7 @@ build install\local: phony CMakeFiles\install\local.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# C:/Users/Family/Documents/dev/MyImGuiApp/CMakeLists.txt
+# C:/Users/Family/Documents/dev/StudioX/CMakeLists.txt
 # =============================================================================
 
 
@@ -250,7 +260,7 @@ build glfw_build\uninstall: phony glfw_build\CMakeFiles\uninstall
 # Utility command for edit_cache
 
 build glfw_build\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\Family\Documents\dev\MyImGuiApp\build\glfw_build && "C:\Program Files\CMake\bin\cmake-gui.exe" -SC:\Users\Family\Documents\dev\MyImGuiApp -BC:\Users\Family\Documents\dev\MyImGuiApp\build"
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\Family\Documents\dev\StudioX\build\glfw_build && "C:\Program Files\CMake\bin\cmake-gui.exe" -SC:\Users\Family\Documents\dev\StudioX -BC:\Users\Family\Documents\dev\StudioX\build"
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -262,7 +272,7 @@ build glfw_build\edit_cache: phony glfw_build\CMakeFiles\edit_cache.util
 # Utility command for rebuild_cache
 
 build glfw_build\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\Family\Documents\dev\MyImGuiApp\build\glfw_build && "C:\Program Files\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\Family\Documents\dev\MyImGuiApp -BC:\Users\Family\Documents\dev\MyImGuiApp\build"
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\Family\Documents\dev\StudioX\build\glfw_build && "C:\Program Files\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\Family\Documents\dev\StudioX -BC:\Users\Family\Documents\dev\StudioX\build"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -280,7 +290,7 @@ build glfw_build\list_install_components: phony
 # Utility command for install
 
 build glfw_build\CMakeFiles\install.util: CUSTOM_COMMAND glfw_build\all
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\Family\Documents\dev\MyImGuiApp\build\glfw_build && "C:\Program Files\CMake\bin\cmake.exe" -P cmake_install.cmake"
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\Family\Documents\dev\StudioX\build\glfw_build && "C:\Program Files\CMake\bin\cmake.exe" -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
@@ -292,7 +302,7 @@ build glfw_build\install: phony glfw_build\CMakeFiles\install.util
 # Utility command for install/local
 
 build glfw_build\CMakeFiles\install\local.util: CUSTOM_COMMAND glfw_build\all
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\Family\Documents\dev\MyImGuiApp\build\glfw_build && "C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\Family\Documents\dev\StudioX\build\glfw_build && "C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -304,7 +314,7 @@ build glfw_build\install\local: phony glfw_build\CMakeFiles\install\local.util
 # Custom command for glfw_build\CMakeFiles\uninstall
 
 build glfw_build\CMakeFiles\uninstall | ${cmake_ninja_workdir}glfw_build\CMakeFiles\uninstall: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\Family\Documents\dev\MyImGuiApp\build\glfw_build && "C:\Program Files\CMake\bin\cmake.exe" -P C:/Users/Family/Documents/dev/MyImGuiApp/build/glfw_build/cmake_uninstall.cmake"
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\Family\Documents\dev\StudioX\build\glfw_build && "C:\Program Files\CMake\bin\cmake.exe" -P C:/Users/Family/Documents/dev/StudioX/build/glfw_build/cmake_uninstall.cmake"
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
@@ -324,7 +334,7 @@ build glfw_build\src\CMakeFiles\glfw.dir\context.c.obj: C_COMPILER__glfw_unscann
   CONFIG = Release
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -MD /W3
-  INCLUDES = -IC:\Users\Family\Documents\dev\glfw\include -IC:\Users\Family\Documents\dev\glfw\src -IC:\Users\Family\Documents\dev\MyImGuiApp\build\glfw_build\src
+  INCLUDES = -IC:\Users\Family\Documents\dev\glfw\include -IC:\Users\Family\Documents\dev\glfw\src -IC:\Users\Family\Documents\dev\StudioX\build\glfw_build\src
   OBJECT_DIR = glfw_build\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = glfw_build\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = glfw_build\src\CMakeFiles\glfw.dir\glfw.pdb
@@ -335,7 +345,7 @@ build glfw_build\src\CMakeFiles\glfw.dir\init.c.obj: C_COMPILER__glfw_unscanned_
   CONFIG = Release
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -MD /W3
-  INCLUDES = -IC:\Users\Family\Documents\dev\glfw\include -IC:\Users\Family\Documents\dev\glfw\src -IC:\Users\Family\Documents\dev\MyImGuiApp\build\glfw_build\src
+  INCLUDES = -IC:\Users\Family\Documents\dev\glfw\include -IC:\Users\Family\Documents\dev\glfw\src -IC:\Users\Family\Documents\dev\StudioX\build\glfw_build\src
   OBJECT_DIR = glfw_build\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = glfw_build\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = glfw_build\src\CMakeFiles\glfw.dir\glfw.pdb
@@ -346,7 +356,7 @@ build glfw_build\src\CMakeFiles\glfw.dir\input.c.obj: C_COMPILER__glfw_unscanned
   CONFIG = Release
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -MD /W3
-  INCLUDES = -IC:\Users\Family\Documents\dev\glfw\include -IC:\Users\Family\Documents\dev\glfw\src -IC:\Users\Family\Documents\dev\MyImGuiApp\build\glfw_build\src
+  INCLUDES = -IC:\Users\Family\Documents\dev\glfw\include -IC:\Users\Family\Documents\dev\glfw\src -IC:\Users\Family\Documents\dev\StudioX\build\glfw_build\src
   OBJECT_DIR = glfw_build\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = glfw_build\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = glfw_build\src\CMakeFiles\glfw.dir\glfw.pdb
@@ -357,7 +367,7 @@ build glfw_build\src\CMakeFiles\glfw.dir\monitor.c.obj: C_COMPILER__glfw_unscann
   CONFIG = Release
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -MD /W3
-  INCLUDES = -IC:\Users\Family\Documents\dev\glfw\include -IC:\Users\Family\Documents\dev\glfw\src -IC:\Users\Family\Documents\dev\MyImGuiApp\build\glfw_build\src
+  INCLUDES = -IC:\Users\Family\Documents\dev\glfw\include -IC:\Users\Family\Documents\dev\glfw\src -IC:\Users\Family\Documents\dev\StudioX\build\glfw_build\src
   OBJECT_DIR = glfw_build\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = glfw_build\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = glfw_build\src\CMakeFiles\glfw.dir\glfw.pdb
@@ -368,7 +378,7 @@ build glfw_build\src\CMakeFiles\glfw.dir\platform.c.obj: C_COMPILER__glfw_unscan
   CONFIG = Release
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -MD /W3
-  INCLUDES = -IC:\Users\Family\Documents\dev\glfw\include -IC:\Users\Family\Documents\dev\glfw\src -IC:\Users\Family\Documents\dev\MyImGuiApp\build\glfw_build\src
+  INCLUDES = -IC:\Users\Family\Documents\dev\glfw\include -IC:\Users\Family\Documents\dev\glfw\src -IC:\Users\Family\Documents\dev\StudioX\build\glfw_build\src
   OBJECT_DIR = glfw_build\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = glfw_build\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = glfw_build\src\CMakeFiles\glfw.dir\glfw.pdb
@@ -379,7 +389,7 @@ build glfw_build\src\CMakeFiles\glfw.dir\vulkan.c.obj: C_COMPILER__glfw_unscanne
   CONFIG = Release
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -MD /W3
-  INCLUDES = -IC:\Users\Family\Documents\dev\glfw\include -IC:\Users\Family\Documents\dev\glfw\src -IC:\Users\Family\Documents\dev\MyImGuiApp\build\glfw_build\src
+  INCLUDES = -IC:\Users\Family\Documents\dev\glfw\include -IC:\Users\Family\Documents\dev\glfw\src -IC:\Users\Family\Documents\dev\StudioX\build\glfw_build\src
   OBJECT_DIR = glfw_build\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = glfw_build\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = glfw_build\src\CMakeFiles\glfw.dir\glfw.pdb
@@ -390,7 +400,7 @@ build glfw_build\src\CMakeFiles\glfw.dir\window.c.obj: C_COMPILER__glfw_unscanne
   CONFIG = Release
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -MD /W3
-  INCLUDES = -IC:\Users\Family\Documents\dev\glfw\include -IC:\Users\Family\Documents\dev\glfw\src -IC:\Users\Family\Documents\dev\MyImGuiApp\build\glfw_build\src
+  INCLUDES = -IC:\Users\Family\Documents\dev\glfw\include -IC:\Users\Family\Documents\dev\glfw\src -IC:\Users\Family\Documents\dev\StudioX\build\glfw_build\src
   OBJECT_DIR = glfw_build\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = glfw_build\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = glfw_build\src\CMakeFiles\glfw.dir\glfw.pdb
@@ -401,7 +411,7 @@ build glfw_build\src\CMakeFiles\glfw.dir\egl_context.c.obj: C_COMPILER__glfw_uns
   CONFIG = Release
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -MD /W3
-  INCLUDES = -IC:\Users\Family\Documents\dev\glfw\include -IC:\Users\Family\Documents\dev\glfw\src -IC:\Users\Family\Documents\dev\MyImGuiApp\build\glfw_build\src
+  INCLUDES = -IC:\Users\Family\Documents\dev\glfw\include -IC:\Users\Family\Documents\dev\glfw\src -IC:\Users\Family\Documents\dev\StudioX\build\glfw_build\src
   OBJECT_DIR = glfw_build\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = glfw_build\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = glfw_build\src\CMakeFiles\glfw.dir\glfw.pdb
@@ -412,7 +422,7 @@ build glfw_build\src\CMakeFiles\glfw.dir\osmesa_context.c.obj: C_COMPILER__glfw_
   CONFIG = Release
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -MD /W3
-  INCLUDES = -IC:\Users\Family\Documents\dev\glfw\include -IC:\Users\Family\Documents\dev\glfw\src -IC:\Users\Family\Documents\dev\MyImGuiApp\build\glfw_build\src
+  INCLUDES = -IC:\Users\Family\Documents\dev\glfw\include -IC:\Users\Family\Documents\dev\glfw\src -IC:\Users\Family\Documents\dev\StudioX\build\glfw_build\src
   OBJECT_DIR = glfw_build\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = glfw_build\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = glfw_build\src\CMakeFiles\glfw.dir\glfw.pdb
@@ -423,7 +433,7 @@ build glfw_build\src\CMakeFiles\glfw.dir\null_init.c.obj: C_COMPILER__glfw_unsca
   CONFIG = Release
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -MD /W3
-  INCLUDES = -IC:\Users\Family\Documents\dev\glfw\include -IC:\Users\Family\Documents\dev\glfw\src -IC:\Users\Family\Documents\dev\MyImGuiApp\build\glfw_build\src
+  INCLUDES = -IC:\Users\Family\Documents\dev\glfw\include -IC:\Users\Family\Documents\dev\glfw\src -IC:\Users\Family\Documents\dev\StudioX\build\glfw_build\src
   OBJECT_DIR = glfw_build\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = glfw_build\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = glfw_build\src\CMakeFiles\glfw.dir\glfw.pdb
@@ -434,7 +444,7 @@ build glfw_build\src\CMakeFiles\glfw.dir\null_monitor.c.obj: C_COMPILER__glfw_un
   CONFIG = Release
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -MD /W3
-  INCLUDES = -IC:\Users\Family\Documents\dev\glfw\include -IC:\Users\Family\Documents\dev\glfw\src -IC:\Users\Family\Documents\dev\MyImGuiApp\build\glfw_build\src
+  INCLUDES = -IC:\Users\Family\Documents\dev\glfw\include -IC:\Users\Family\Documents\dev\glfw\src -IC:\Users\Family\Documents\dev\StudioX\build\glfw_build\src
   OBJECT_DIR = glfw_build\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = glfw_build\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = glfw_build\src\CMakeFiles\glfw.dir\glfw.pdb
@@ -445,7 +455,7 @@ build glfw_build\src\CMakeFiles\glfw.dir\null_window.c.obj: C_COMPILER__glfw_uns
   CONFIG = Release
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -MD /W3
-  INCLUDES = -IC:\Users\Family\Documents\dev\glfw\include -IC:\Users\Family\Documents\dev\glfw\src -IC:\Users\Family\Documents\dev\MyImGuiApp\build\glfw_build\src
+  INCLUDES = -IC:\Users\Family\Documents\dev\glfw\include -IC:\Users\Family\Documents\dev\glfw\src -IC:\Users\Family\Documents\dev\StudioX\build\glfw_build\src
   OBJECT_DIR = glfw_build\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = glfw_build\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = glfw_build\src\CMakeFiles\glfw.dir\glfw.pdb
@@ -456,7 +466,7 @@ build glfw_build\src\CMakeFiles\glfw.dir\null_joystick.c.obj: C_COMPILER__glfw_u
   CONFIG = Release
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -MD /W3
-  INCLUDES = -IC:\Users\Family\Documents\dev\glfw\include -IC:\Users\Family\Documents\dev\glfw\src -IC:\Users\Family\Documents\dev\MyImGuiApp\build\glfw_build\src
+  INCLUDES = -IC:\Users\Family\Documents\dev\glfw\include -IC:\Users\Family\Documents\dev\glfw\src -IC:\Users\Family\Documents\dev\StudioX\build\glfw_build\src
   OBJECT_DIR = glfw_build\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = glfw_build\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = glfw_build\src\CMakeFiles\glfw.dir\glfw.pdb
@@ -467,7 +477,7 @@ build glfw_build\src\CMakeFiles\glfw.dir\win32_module.c.obj: C_COMPILER__glfw_un
   CONFIG = Release
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -MD /W3
-  INCLUDES = -IC:\Users\Family\Documents\dev\glfw\include -IC:\Users\Family\Documents\dev\glfw\src -IC:\Users\Family\Documents\dev\MyImGuiApp\build\glfw_build\src
+  INCLUDES = -IC:\Users\Family\Documents\dev\glfw\include -IC:\Users\Family\Documents\dev\glfw\src -IC:\Users\Family\Documents\dev\StudioX\build\glfw_build\src
   OBJECT_DIR = glfw_build\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = glfw_build\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = glfw_build\src\CMakeFiles\glfw.dir\glfw.pdb
@@ -478,7 +488,7 @@ build glfw_build\src\CMakeFiles\glfw.dir\win32_time.c.obj: C_COMPILER__glfw_unsc
   CONFIG = Release
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -MD /W3
-  INCLUDES = -IC:\Users\Family\Documents\dev\glfw\include -IC:\Users\Family\Documents\dev\glfw\src -IC:\Users\Family\Documents\dev\MyImGuiApp\build\glfw_build\src
+  INCLUDES = -IC:\Users\Family\Documents\dev\glfw\include -IC:\Users\Family\Documents\dev\glfw\src -IC:\Users\Family\Documents\dev\StudioX\build\glfw_build\src
   OBJECT_DIR = glfw_build\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = glfw_build\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = glfw_build\src\CMakeFiles\glfw.dir\glfw.pdb
@@ -489,7 +499,7 @@ build glfw_build\src\CMakeFiles\glfw.dir\win32_thread.c.obj: C_COMPILER__glfw_un
   CONFIG = Release
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -MD /W3
-  INCLUDES = -IC:\Users\Family\Documents\dev\glfw\include -IC:\Users\Family\Documents\dev\glfw\src -IC:\Users\Family\Documents\dev\MyImGuiApp\build\glfw_build\src
+  INCLUDES = -IC:\Users\Family\Documents\dev\glfw\include -IC:\Users\Family\Documents\dev\glfw\src -IC:\Users\Family\Documents\dev\StudioX\build\glfw_build\src
   OBJECT_DIR = glfw_build\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = glfw_build\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = glfw_build\src\CMakeFiles\glfw.dir\glfw.pdb
@@ -500,7 +510,7 @@ build glfw_build\src\CMakeFiles\glfw.dir\win32_init.c.obj: C_COMPILER__glfw_unsc
   CONFIG = Release
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -MD /W3
-  INCLUDES = -IC:\Users\Family\Documents\dev\glfw\include -IC:\Users\Family\Documents\dev\glfw\src -IC:\Users\Family\Documents\dev\MyImGuiApp\build\glfw_build\src
+  INCLUDES = -IC:\Users\Family\Documents\dev\glfw\include -IC:\Users\Family\Documents\dev\glfw\src -IC:\Users\Family\Documents\dev\StudioX\build\glfw_build\src
   OBJECT_DIR = glfw_build\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = glfw_build\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = glfw_build\src\CMakeFiles\glfw.dir\glfw.pdb
@@ -511,7 +521,7 @@ build glfw_build\src\CMakeFiles\glfw.dir\win32_joystick.c.obj: C_COMPILER__glfw_
   CONFIG = Release
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -MD /W3
-  INCLUDES = -IC:\Users\Family\Documents\dev\glfw\include -IC:\Users\Family\Documents\dev\glfw\src -IC:\Users\Family\Documents\dev\MyImGuiApp\build\glfw_build\src
+  INCLUDES = -IC:\Users\Family\Documents\dev\glfw\include -IC:\Users\Family\Documents\dev\glfw\src -IC:\Users\Family\Documents\dev\StudioX\build\glfw_build\src
   OBJECT_DIR = glfw_build\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = glfw_build\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = glfw_build\src\CMakeFiles\glfw.dir\glfw.pdb
@@ -522,7 +532,7 @@ build glfw_build\src\CMakeFiles\glfw.dir\win32_monitor.c.obj: C_COMPILER__glfw_u
   CONFIG = Release
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -MD /W3
-  INCLUDES = -IC:\Users\Family\Documents\dev\glfw\include -IC:\Users\Family\Documents\dev\glfw\src -IC:\Users\Family\Documents\dev\MyImGuiApp\build\glfw_build\src
+  INCLUDES = -IC:\Users\Family\Documents\dev\glfw\include -IC:\Users\Family\Documents\dev\glfw\src -IC:\Users\Family\Documents\dev\StudioX\build\glfw_build\src
   OBJECT_DIR = glfw_build\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = glfw_build\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = glfw_build\src\CMakeFiles\glfw.dir\glfw.pdb
@@ -533,7 +543,7 @@ build glfw_build\src\CMakeFiles\glfw.dir\win32_window.c.obj: C_COMPILER__glfw_un
   CONFIG = Release
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -MD /W3
-  INCLUDES = -IC:\Users\Family\Documents\dev\glfw\include -IC:\Users\Family\Documents\dev\glfw\src -IC:\Users\Family\Documents\dev\MyImGuiApp\build\glfw_build\src
+  INCLUDES = -IC:\Users\Family\Documents\dev\glfw\include -IC:\Users\Family\Documents\dev\glfw\src -IC:\Users\Family\Documents\dev\StudioX\build\glfw_build\src
   OBJECT_DIR = glfw_build\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = glfw_build\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = glfw_build\src\CMakeFiles\glfw.dir\glfw.pdb
@@ -544,7 +554,7 @@ build glfw_build\src\CMakeFiles\glfw.dir\wgl_context.c.obj: C_COMPILER__glfw_uns
   CONFIG = Release
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -MD /W3
-  INCLUDES = -IC:\Users\Family\Documents\dev\glfw\include -IC:\Users\Family\Documents\dev\glfw\src -IC:\Users\Family\Documents\dev\MyImGuiApp\build\glfw_build\src
+  INCLUDES = -IC:\Users\Family\Documents\dev\glfw\include -IC:\Users\Family\Documents\dev\glfw\src -IC:\Users\Family\Documents\dev\StudioX\build\glfw_build\src
   OBJECT_DIR = glfw_build\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = glfw_build\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = glfw_build\src\CMakeFiles\glfw.dir\glfw.pdb
@@ -582,7 +592,7 @@ build glfw_build\src\update_mappings: phony glfw_build\src\CMakeFiles\update_map
 # Utility command for edit_cache
 
 build glfw_build\src\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\Family\Documents\dev\MyImGuiApp\build\glfw_build\src && "C:\Program Files\CMake\bin\cmake-gui.exe" -SC:\Users\Family\Documents\dev\MyImGuiApp -BC:\Users\Family\Documents\dev\MyImGuiApp\build"
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\Family\Documents\dev\StudioX\build\glfw_build\src && "C:\Program Files\CMake\bin\cmake-gui.exe" -SC:\Users\Family\Documents\dev\StudioX -BC:\Users\Family\Documents\dev\StudioX\build"
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -594,7 +604,7 @@ build glfw_build\src\edit_cache: phony glfw_build\src\CMakeFiles\edit_cache.util
 # Utility command for rebuild_cache
 
 build glfw_build\src\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\Family\Documents\dev\MyImGuiApp\build\glfw_build\src && "C:\Program Files\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\Family\Documents\dev\MyImGuiApp -BC:\Users\Family\Documents\dev\MyImGuiApp\build"
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\Family\Documents\dev\StudioX\build\glfw_build\src && "C:\Program Files\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\Family\Documents\dev\StudioX -BC:\Users\Family\Documents\dev\StudioX\build"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -612,7 +622,7 @@ build glfw_build\src\list_install_components: phony
 # Utility command for install
 
 build glfw_build\src\CMakeFiles\install.util: CUSTOM_COMMAND glfw_build\src\all
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\Family\Documents\dev\MyImGuiApp\build\glfw_build\src && "C:\Program Files\CMake\bin\cmake.exe" -P cmake_install.cmake"
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\Family\Documents\dev\StudioX\build\glfw_build\src && "C:\Program Files\CMake\bin\cmake.exe" -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
@@ -624,7 +634,7 @@ build glfw_build\src\install: phony glfw_build\src\CMakeFiles\install.util
 # Utility command for install/local
 
 build glfw_build\src\CMakeFiles\install\local.util: CUSTOM_COMMAND glfw_build\src\all
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\Family\Documents\dev\MyImGuiApp\build\glfw_build\src && "C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\Family\Documents\dev\StudioX\build\glfw_build\src && "C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -642,7 +652,7 @@ build glfw_build\src\CMakeFiles\update_mappings | ${cmake_ninja_workdir}glfw_bui
 # =============================================================================
 # Target aliases.
 
-build MyImGuiApp: phony MyImGuiApp.exe
+build StudioX: phony StudioX.exe
 
 build glfw: phony glfw_build\src\glfw3.lib
 
@@ -660,21 +670,21 @@ build update_mappings: phony glfw_build\src\update_mappings
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/Family/Documents/dev/MyImGuiApp/build
+# Folder: C:/Users/Family/Documents/dev/StudioX/build
 
-build all: phony imgui.lib MyImGuiApp.exe glfw_build\all
+build all: phony imgui.lib StudioX.exe glfw_build\all
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/Family/Documents/dev/MyImGuiApp/build/glfw_build
+# Folder: C:/Users/Family/Documents/dev/StudioX/build/glfw_build
 
 build glfw_build\all: phony glfw_build\src\all
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/Family/Documents/dev/MyImGuiApp/build/glfw_build/src
+# Folder: C:/Users/Family/Documents/dev/StudioX/build/glfw_build/src
 
 build glfw_build\src\all: phony glfw_build\src\glfw3.lib
 
@@ -685,14 +695,14 @@ build glfw_build\src\all: phony glfw_build\src\glfw3.lib
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja C$:\Users\Family\Documents\dev\MyImGuiApp\build\cmake_install.cmake C$:\Users\Family\Documents\dev\MyImGuiApp\build\glfw_build\cmake_install.cmake C$:\Users\Family\Documents\dev\MyImGuiApp\build\glfw_build\src\cmake_install.cmake: RERUN_CMAKE | C$:\Program$ Files\CMake\share\cmake-4.3\Modules\BasicConfigVersion-SameMajorVersion.cmake.in C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeCCompiler.cmake.in C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeCCompilerABI.c C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeCInformation.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeCXXCompiler.cmake.in C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeCXXCompilerABI.cpp C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeCompilerIdDetection.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeDependentOption.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeDetermineCCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeDetermineCXXCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeDetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeDetermineCompilerABI.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeDetermineCompilerId.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeDetermineCompilerSupport.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeDetermineRCCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeDetermineSystem.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeFindBinUtils.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeNinjaFindMake.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakePackageConfigHelpers.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeParseImplicitIncludeInfo.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeParseImplicitLinkInfo.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeParseLibraryArchitecture.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeRCCompiler.cmake.in C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeRCInformation.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeSystem.cmake.in C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeTestCCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeTestCXXCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeTestCompilerCommon.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeTestRCCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CheckCSourceCompiles.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CheckIncludeFile.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CheckLibraryExists.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\ADSP-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\ARMCC-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\ARMClang-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\AppleClang-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\Borland-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\Bruce-C-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\Clang-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\Clang-DetermineCompilerInternal.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\Compaq-C-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\Cray-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\CrayClang-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\Diab-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\Embarcadero-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\Fujitsu-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\GHS-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\GNU-C-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\HP-C-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\HP-CXX-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\IAR-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\Intel-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\LCC-C-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\MSVC-CXX-CXXImportStd.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\MSVC-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\MSVC.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\NVHPC-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\NVIDIA-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\OrangeC-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\PGI-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\PathScale-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\Renesas-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\SCO-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\SDCC-C-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\SunPro-C-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\TI-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\TIClang-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\Tasking-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\Watcom-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\XL-C-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\XL-CXX-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\XLClang-C-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\zOS-C-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\FindPackageMessage.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\FindThreads.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\GNUInstallDirs.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Internal\CMakeCLinkerInformation.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Internal\CMakeCXXLinkerInformation.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Internal\CMakeCommonLinkerInformation.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Internal\CMakeDetermineLinkerId.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Internal\CMakeInspectCLinker.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Internal\CMakeInspectCXXLinker.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Internal\CheckSourceCompiles.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Internal\FeatureTesting.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Linker\MSVC-C.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Linker\MSVC-CXX.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Linker\MSVC.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Platform\Linker\Windows-MSVC-C.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Platform\Linker\Windows-MSVC-CXX.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Platform\Linker\Windows-MSVC.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Platform\Windows-Determine-CXX.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Platform\Windows-Initialize.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Platform\Windows.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Platform\WindowsPaths.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\WriteBasicConfigVersionFile.cmake C$:\Users\Family\Documents\dev\MyImGuiApp\CMakeLists.txt C$:\Users\Family\Documents\dev\glfw\CMakeLists.txt C$:\Users\Family\Documents\dev\glfw\CMake\cmake_uninstall.cmake.in C$:\Users\Family\Documents\dev\glfw\CMake\glfw3.pc.in C$:\Users\Family\Documents\dev\glfw\CMake\glfw3Config.cmake.in C$:\Users\Family\Documents\dev\glfw\src\CMakeLists.txt CMakeCache.txt CMakeFiles\4.3.0-rc1\CMakeCCompiler.cmake CMakeFiles\4.3.0-rc1\CMakeCXXCompiler.cmake CMakeFiles\4.3.0-rc1\CMakeRCCompiler.cmake CMakeFiles\4.3.0-rc1\CMakeSystem.cmake
+build build.ninja C$:\Users\Family\Documents\dev\StudioX\build\cmake_install.cmake C$:\Users\Family\Documents\dev\StudioX\build\glfw_build\cmake_install.cmake C$:\Users\Family\Documents\dev\StudioX\build\glfw_build\src\cmake_install.cmake: RERUN_CMAKE | C$:\Program$ Files\CMake\share\cmake-4.3\Modules\BasicConfigVersion-SameMajorVersion.cmake.in C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeCCompiler.cmake.in C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeCCompilerABI.c C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeCInformation.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeCXXCompiler.cmake.in C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeCXXCompilerABI.cpp C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeCompilerIdDetection.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeDependentOption.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeDetermineCCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeDetermineCXXCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeDetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeDetermineCompilerABI.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeDetermineCompilerId.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeDetermineCompilerSupport.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeDetermineRCCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeDetermineSystem.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeFindBinUtils.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeNinjaFindMake.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakePackageConfigHelpers.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeParseImplicitIncludeInfo.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeParseImplicitLinkInfo.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeParseLibraryArchitecture.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeRCCompiler.cmake.in C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeRCInformation.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeSystem.cmake.in C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeTestCCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeTestCXXCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeTestCompilerCommon.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeTestRCCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CheckCSourceCompiles.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CheckIncludeFile.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CheckLibraryExists.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\ADSP-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\ARMCC-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\ARMClang-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\AppleClang-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\Borland-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\Bruce-C-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\Clang-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\Clang-DetermineCompilerInternal.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\Compaq-C-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\Cray-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\CrayClang-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\Diab-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\Embarcadero-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\Fujitsu-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\GHS-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\GNU-C-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\HP-C-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\HP-CXX-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\IAR-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\Intel-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\LCC-C-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\MSVC-CXX-CXXImportStd.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\MSVC-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\MSVC.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\NVHPC-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\NVIDIA-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\OrangeC-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\PGI-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\PathScale-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\Renesas-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\SCO-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\SDCC-C-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\SunPro-C-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\TI-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\TIClang-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\Tasking-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\Watcom-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\XL-C-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\XL-CXX-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\XLClang-C-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\zOS-C-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\FindPackageMessage.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\FindThreads.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\GNUInstallDirs.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Internal\CMakeCLinkerInformation.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Internal\CMakeCXXLinkerInformation.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Internal\CMakeCommonLinkerInformation.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Internal\CMakeDetermineLinkerId.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Internal\CMakeInspectCLinker.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Internal\CMakeInspectCXXLinker.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Internal\CheckSourceCompiles.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Internal\FeatureTesting.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Linker\MSVC-C.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Linker\MSVC-CXX.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Linker\MSVC.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Platform\Linker\Windows-MSVC-C.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Platform\Linker\Windows-MSVC-CXX.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Platform\Linker\Windows-MSVC.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Platform\Windows-Determine-CXX.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Platform\Windows-Initialize.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Platform\Windows.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Platform\WindowsPaths.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\WriteBasicConfigVersionFile.cmake C$:\Users\Family\Documents\dev\StudioX\CMakeLists.txt C$:\Users\Family\Documents\dev\glfw\CMakeLists.txt C$:\Users\Family\Documents\dev\glfw\CMake\cmake_uninstall.cmake.in C$:\Users\Family\Documents\dev\glfw\CMake\glfw3.pc.in C$:\Users\Family\Documents\dev\glfw\CMake\glfw3Config.cmake.in C$:\Users\Family\Documents\dev\glfw\src\CMakeLists.txt CMakeCache.txt CMakeFiles\4.3.0-rc1\CMakeCCompiler.cmake CMakeFiles\4.3.0-rc1\CMakeCXXCompiler.cmake CMakeFiles\4.3.0-rc1\CMakeRCCompiler.cmake CMakeFiles\4.3.0-rc1\CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:\Program$ Files\CMake\share\cmake-4.3\Modules\BasicConfigVersion-SameMajorVersion.cmake.in C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeCCompiler.cmake.in C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeCCompilerABI.c C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeCInformation.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeCXXCompiler.cmake.in C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeCXXCompilerABI.cpp C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeCompilerIdDetection.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeDependentOption.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeDetermineCCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeDetermineCXXCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeDetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeDetermineCompilerABI.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeDetermineCompilerId.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeDetermineCompilerSupport.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeDetermineRCCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeDetermineSystem.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeFindBinUtils.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeNinjaFindMake.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakePackageConfigHelpers.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeParseImplicitIncludeInfo.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeParseImplicitLinkInfo.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeParseLibraryArchitecture.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeRCCompiler.cmake.in C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeRCInformation.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeSystem.cmake.in C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeTestCCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeTestCXXCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeTestCompilerCommon.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeTestRCCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CheckCSourceCompiles.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CheckIncludeFile.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CheckLibraryExists.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\ADSP-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\ARMCC-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\ARMClang-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\AppleClang-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\Borland-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\Bruce-C-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\Clang-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\Clang-DetermineCompilerInternal.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\Compaq-C-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\Cray-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\CrayClang-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\Diab-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\Embarcadero-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\Fujitsu-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\GHS-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\GNU-C-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\HP-C-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\HP-CXX-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\IAR-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\Intel-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\LCC-C-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\MSVC-CXX-CXXImportStd.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\MSVC-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\MSVC.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\NVHPC-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\NVIDIA-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\OrangeC-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\PGI-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\PathScale-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\Renesas-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\SCO-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\SDCC-C-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\SunPro-C-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\TI-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\TIClang-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\Tasking-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\Watcom-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\XL-C-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\XL-CXX-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\XLClang-C-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\zOS-C-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\FindPackageMessage.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\FindThreads.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\GNUInstallDirs.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Internal\CMakeCLinkerInformation.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Internal\CMakeCXXLinkerInformation.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Internal\CMakeCommonLinkerInformation.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Internal\CMakeDetermineLinkerId.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Internal\CMakeInspectCLinker.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Internal\CMakeInspectCXXLinker.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Internal\CheckSourceCompiles.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Internal\FeatureTesting.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Linker\MSVC-C.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Linker\MSVC-CXX.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Linker\MSVC.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Platform\Linker\Windows-MSVC-C.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Platform\Linker\Windows-MSVC-CXX.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Platform\Linker\Windows-MSVC.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Platform\Windows-Determine-CXX.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Platform\Windows-Initialize.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Platform\Windows.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Platform\WindowsPaths.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\WriteBasicConfigVersionFile.cmake C$:\Users\Family\Documents\dev\MyImGuiApp\CMakeLists.txt C$:\Users\Family\Documents\dev\glfw\CMakeLists.txt C$:\Users\Family\Documents\dev\glfw\CMake\cmake_uninstall.cmake.in C$:\Users\Family\Documents\dev\glfw\CMake\glfw3.pc.in C$:\Users\Family\Documents\dev\glfw\CMake\glfw3Config.cmake.in C$:\Users\Family\Documents\dev\glfw\src\CMakeLists.txt CMakeCache.txt CMakeFiles\4.3.0-rc1\CMakeCCompiler.cmake CMakeFiles\4.3.0-rc1\CMakeCXXCompiler.cmake CMakeFiles\4.3.0-rc1\CMakeRCCompiler.cmake CMakeFiles\4.3.0-rc1\CMakeSystem.cmake: phony
+build C$:\Program$ Files\CMake\share\cmake-4.3\Modules\BasicConfigVersion-SameMajorVersion.cmake.in C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeCCompiler.cmake.in C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeCCompilerABI.c C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeCInformation.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeCXXCompiler.cmake.in C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeCXXCompilerABI.cpp C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeCompilerIdDetection.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeDependentOption.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeDetermineCCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeDetermineCXXCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeDetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeDetermineCompilerABI.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeDetermineCompilerId.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeDetermineCompilerSupport.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeDetermineRCCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeDetermineSystem.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeFindBinUtils.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeNinjaFindMake.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakePackageConfigHelpers.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeParseImplicitIncludeInfo.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeParseImplicitLinkInfo.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeParseLibraryArchitecture.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeRCCompiler.cmake.in C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeRCInformation.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeSystem.cmake.in C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeTestCCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeTestCXXCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeTestCompilerCommon.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CMakeTestRCCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CheckCSourceCompiles.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CheckIncludeFile.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\CheckLibraryExists.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\ADSP-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\ARMCC-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\ARMClang-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\AppleClang-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\Borland-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\Bruce-C-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\Clang-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\Clang-DetermineCompilerInternal.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\Compaq-C-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\Cray-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\CrayClang-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\Diab-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\Embarcadero-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\Fujitsu-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\GHS-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\GNU-C-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\HP-C-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\HP-CXX-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\IAR-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\Intel-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\LCC-C-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\MSVC-CXX-CXXImportStd.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\MSVC-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\MSVC.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\NVHPC-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\NVIDIA-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\OrangeC-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\PGI-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\PathScale-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\Renesas-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\SCO-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\SDCC-C-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\SunPro-C-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\TI-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\TIClang-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\Tasking-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\Watcom-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\XL-C-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\XL-CXX-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\XLClang-C-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\zOS-C-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\FindPackageMessage.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\FindThreads.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\GNUInstallDirs.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Internal\CMakeCLinkerInformation.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Internal\CMakeCXXLinkerInformation.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Internal\CMakeCommonLinkerInformation.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Internal\CMakeDetermineLinkerId.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Internal\CMakeInspectCLinker.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Internal\CMakeInspectCXXLinker.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Internal\CheckSourceCompiles.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Internal\FeatureTesting.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Linker\MSVC-C.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Linker\MSVC-CXX.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Linker\MSVC.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Platform\Linker\Windows-MSVC-C.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Platform\Linker\Windows-MSVC-CXX.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Platform\Linker\Windows-MSVC.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Platform\Windows-Determine-CXX.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Platform\Windows-Initialize.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Platform\Windows.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\Platform\WindowsPaths.cmake C$:\Program$ Files\CMake\share\cmake-4.3\Modules\WriteBasicConfigVersionFile.cmake C$:\Users\Family\Documents\dev\StudioX\CMakeLists.txt C$:\Users\Family\Documents\dev\glfw\CMakeLists.txt C$:\Users\Family\Documents\dev\glfw\CMake\cmake_uninstall.cmake.in C$:\Users\Family\Documents\dev\glfw\CMake\glfw3.pc.in C$:\Users\Family\Documents\dev\glfw\CMake\glfw3Config.cmake.in C$:\Users\Family\Documents\dev\glfw\src\CMakeLists.txt CMakeCache.txt CMakeFiles\4.3.0-rc1\CMakeCCompiler.cmake CMakeFiles\4.3.0-rc1\CMakeCXXCompiler.cmake CMakeFiles\4.3.0-rc1\CMakeRCCompiler.cmake CMakeFiles\4.3.0-rc1\CMakeSystem.cmake: phony
 
 
 #############################################

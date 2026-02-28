@@ -1,7 +1,7 @@
-prefix=C:/Program Files (x86)/MyImGuiApp
+prefix=C:/Program Files (x86)/StudioX
 exec_prefix=${prefix}
-includedir=C:/Program Files (x86)/MyImGuiApp/include
-libdir=C:/Program Files (x86)/MyImGuiApp/lib
+includedir=C:/Program Files (x86)/StudioX/include
+libdir=C:/Program Files (x86)/StudioX/lib
 
 Name: GLFW
 Description: A multi-platform library for OpenGL, window and input
