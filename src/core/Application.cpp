@@ -10,8 +10,8 @@
 
 Application::Application()
 {
-    initState();
-    initUI();
+    initState();    // Initialise l’état de l’application
+    initUI();       // Initialise les vues de l'interface utilisateur
 }
 
 void Application::initState()
@@ -30,7 +30,7 @@ void Application::initUI()
 void Application::run()
 {
     glfwInit();
-    GLFWwindow* window = glfwCreateWindow(1280, 720, "TEXTA DAW", nullptr, nullptr);
+    GLFWwindow* window = glfwCreateWindow(1280, 720, "TEXTA StudioX", nullptr, nullptr);
     glfwMakeContextCurrent(window);
 
     IMGUI_CHECKVERSION();
