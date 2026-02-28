@@ -9,6 +9,9 @@ struct TrackState
     std::string name;
     float volume = 0.8f;
     float pan = 0.0f;
+    bool isMuted = false;
+    bool isSolo = false;
+    bool isRecordEnabled = false;
 };
 
 struct TransportState
