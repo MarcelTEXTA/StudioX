@@ -4,6 +4,13 @@
 #include <vector>
 #include <string>
 
+struct ViewState
+{
+    bool isMixerVisible = true;
+    bool isPianoRollVisible = true;
+    bool isTrackListVisible = true;
+};
+
 struct TrackState
 {
     std::string name;
